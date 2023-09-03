@@ -1,0 +1,13 @@
+format-version: 1.2
+data-version: http://si.eu-parc.eu/pko/releases/2023-09-03/pko-base.owl
+ontology: http://si.eu-parc.eu/pko/pko-base.owl
+property_value: http://purl.org/dc/elements/1.1/type IAO:8000001
+property_value: http://purl.org/dc/terms/description "None" xsd:string
+property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/unspecified
+property_value: http://purl.org/dc/terms/title "pharmokinetic-ontology" xsd:string
+property_value: owl:versionInfo "2023-09-03" xsd:string
+
+[Term]
+id: PKO:0000000
+name: root node
+
