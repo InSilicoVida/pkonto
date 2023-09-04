@@ -1,15 +1,18 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://si.eu-parc.eu/pko/pko-base.owl#"
-     xml:base="http://si.eu-parc.eu/pko/pko-base.owl"
+<rdf:RDF xmlns="http://si.eu-parc.eu//pko/pko-base.owl#"
+     xml:base="http://si.eu-parc.eu//pko/pko-base.owl"
      xmlns:dce="http://purl.org/dc/elements/1.1/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:dcterms="http://purl.org/dc/terms/">
-    <owl:Ontology rdf:about="http://si.eu-parc.eu/pko/pko-base.owl">
-        <owl:versionIRI rdf:resource="http://si.eu-parc.eu/pko/releases/2023-09-03/pko-base.owl"/>
+     xmlns:dcterms="http://purl.org/dc/terms/"
+     xmlns:IAO_definition="http://purl.obolibrary.org/obo/IAO_definition%20"
+     xmlns:IAO_definition1="http://purl.obolibrary.org/obo/IAO_definition ">
+    <owl:Ontology rdf:about="http://si.eu-parc.eu//pko/pko-base.owl">
+        <owl:versionIRI rdf:resource="http://si.eu-parc.eu//pko/releases/2023-09-03/pko-base.owl"/>
         <dce:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
         <dcterms:description>None</dcterms:description>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/unspecified"/>
@@ -27,6 +30,30 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_creator"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_definition -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_definition"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_definition source -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_definition source"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_definition%20source -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_definition%20source"/>
     
 
 
@@ -76,6 +103,51 @@
     <owl:Class rdf:about="http://si.eu-parc.eu/PKO_0000000">
         <rdfs:label xml:lang="en">root node</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://si.eu-parc.eu/PKO_0000001 -->
+
+    <owl:Class rdf:about="http://si.eu-parc.eu/PKO_0000001">
+        <obo:IAO_creator rdf:resource="https://orcid.org/0000-0003-0593-2598"/>
+        <obo:IAO_definition>Xenoboiti kinetic science of  ADME (absorption, distribution, and elimination ie, metabolism and excretion) Or
+Studies  time course and fate of a xenobitic within body over period of time.</obo:IAO_definition>
+        <rdfs:label>Pharmacokinetics</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.ebi.ac.uk/efo/EFO_0007635"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://si.eu-parc.eu/PKO_0000001"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_definition"/>
+        <owl:annotatedTarget>Xenoboiti kinetic science of  ADME (absorption, distribution, and elimination ie, metabolism and excretion) Or
+Studies  time course and fate of a xenobitic within body over period of time.</owl:annotatedTarget>
+        <IAO_definition1:source>Shargel, Leon, et al. Applied Biopharmaceutics &amp;
+ Pharmacokinetics.7th ed., McGraw-Hill Education, 2015. Chapter 11, Page Number-4</IAO_definition1:source>
+    </owl:Axiom>
+    
+
+
+    <!-- http://si.eu-parc.eu/PKO_0000002 -->
+
+    <owl:Class rdf:about="http://si.eu-parc.eu/PKO_0000002">
+        <rdfs:subClassOf rdf:resource="http://si.eu-parc.eu/001"/>
+        <obo:IAO_creator rdf:resource="https://orcid.org/0000-0003-0593-2598"/>
+        <obo:IAO_definition>Temporal changes in Xenoboitic disposition can be cyclical over a constant period</obo:IAO_definition>
+        <rdfs:label>Chronopharmacokinetic</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://accesspharmacy.mhmedical.com/book.aspx?bookID=1592"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://si.eu-parc.eu/PKO_0000002"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_definition"/>
+        <owl:annotatedTarget>Temporal changes in Xenoboitic disposition can be cyclical over a constant period</owl:annotatedTarget>
+        <IAO_definition1:source>Shargel, Leon, et al. Applied Biopharmaceutics &amp;
+ Pharmacokinetics.7th ed., McGraw-Hill Education, 2015. Chapter 10, Page Number-245</IAO_definition1:source>
+    </owl:Axiom>
+    
+
+
+    <!-- http://si.eu-parc.eu/001 -->
+
+    <owl:Class rdf:about="http://si.eu-parc.eu/001"/>
 </rdf:RDF>
 
 

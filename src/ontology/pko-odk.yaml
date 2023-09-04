@@ -2,7 +2,6 @@ allow_equivalents: asserted-only
 catalog_file: catalog-v001.xml
 ci:
   - github_actions
-components: null
 contact: null
 contributors: null
 create_obo_metadata: true
@@ -33,6 +32,7 @@ import_group:
     - id: pato
       module_type: slme
       module_type_slme: STAR
+    - id: iao
 license: https://creativecommons.org/licenses/unspecified
 namespaces: null
 obo_format_options: ""
@@ -80,7 +80,7 @@ sssom_mappingset_group: null
 subset_group: null
 title: pharmokinetic-ontology
 travis_emails: null
-uribase: http://si.eu-parc.eu
+uribase: http://si.eu-parc.eu/
 use_context: false
 use_custom_import_module: false
 use_dosdps: false
@@ -91,3 +91,10 @@ use_mappings: false
 use_templates: true
 workflows:
   - docs
+components:
+  products:
+    - filename: vocab.owl # TSV templates to define VIBSO classes
+      use_template: true
+      template_options: --add-prefixes config/context.json
+      templates:
+        - vocab.tsv # TSV templates to define VIBSO object properties
