@@ -93,8 +93,8 @@ workflows:
   - docs
 components:
   products:
-    - filename: vocab.owl # TSV templates to define VIBSO classes
+    - filename: vocab.owl # 
       use_template: true
       template_options: --add-prefixes config/context.json
       templates:
-        - vocab.tsv # TSV templates to define VIBSO object properties
+        - vocab.tsv # 
